@@ -1,3 +1,20 @@
+如果需要生成生成一个视频带字幕的需要以下流程
+需要AI生成文本,用txt存起来,
+需要TxtToJson.py生成“text_contenta.json”
+再用
+图片加文字分割关键词1.1.py,下面的input_folder文件放图片(需要生成720x1280)
+以及找到“text_contenta.json”生成图片
+
+提取文本英文元素.py,提取text_content.json里面的关键词,会得到如下内容,
+<break time="2s"/>Good morning <break time="2s"/>
+<break time="2s"/>Good night <break time="2s"/>
+<break time="2s"/>Have a nice day <break time="2s"/>
+<break time="2s"/>See you later <break time="2s"/>
+拿到这个,用火山文件获取音频,
+
+
+
+
 - 👋 Hi, I’m @lenen8866
 - 👀 I’m 我是一个新手python开发者
 - 🌱 用谷歌储存时间是:2024年10月29日(记录下)居然可以外链,还不收费.
